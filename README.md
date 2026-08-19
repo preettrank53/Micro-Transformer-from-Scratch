@@ -58,8 +58,12 @@ The project is structured incrementally to build up the entire architecture piec
 micro-Transformer-from-scratch/
 ├── data/                  # Tiny Shakespeare dataset
 │   └── input.txt          # Plain text source file
+├── experiments/           # Sanity checks and testing scripts
+│   └── attention_sanity_check.py
 ├── src/                   # Source code
-│   └── dataset.py         # Tokenizer, vocabulary, train/val split & batching
+│   ├── dataset.py         # Tokenizer, vocabulary, train/val split & batching
+│   ├── embeddings.py      # Token and position embeddings
+│   └── attention.py       # Self-attention and multi-head attention module
 └── README.md              # Project documentation
 ```
 
